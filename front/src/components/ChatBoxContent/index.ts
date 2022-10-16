@@ -1,1 +1,1 @@
-import ChatBoxContent from "./ChatBoxContent";
+export { ChatBoxContent } from "./ChatBoxContent";

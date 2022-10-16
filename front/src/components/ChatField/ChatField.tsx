@@ -2,8 +2,7 @@ import React from 'react';
 import { ChatBoxesContext } from '../../contexts';
 import { ChatFieldProps } from '../contracts';
 
-
-const ChatField : React.FC<ChatFieldProps> = ({ author }) => {
+export const ChatField : React.FC<ChatFieldProps> = ({ author }) => {
     const inputRef = React.createRef<HTMLInputElement>();
       const contextData = React.useContext(ChatBoxesContext);
 
@@ -23,3 +22,4 @@ const ChatField : React.FC<ChatFieldProps> = ({ author }) => {
 }
 
 export default ChatField;
+ChatField.displayName = 'ChatField';

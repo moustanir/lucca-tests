@@ -3,7 +3,7 @@ import { ChatMessage, ContentProps } from '../contracts';
 import ChatBoxMessage from '../ChatBoxMessage/ChatBoxMessage';
 import { ChatBoxesContext } from '../../contexts';
 
-const ChatBoxContent: React.FC<ContentProps> = ({ author }) => {
+export const ChatBoxContent: React.FC<ContentProps> = ({ author }) => {
   const contextData = React.useContext(ChatBoxesContext);
   return (
     <div className="ChatBoxMessageContainer">
@@ -15,3 +15,4 @@ const ChatBoxContent: React.FC<ContentProps> = ({ author }) => {
 }
 
 export default ChatBoxContent;
+ChatBoxContent.displayName = 'ChatBoxContent';

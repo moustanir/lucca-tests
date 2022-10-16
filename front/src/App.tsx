@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-// @ts-ignore
-import { ChatBoxesContext } from './contexts/index.tsx';
+import { ChatBoxesContext } from './contexts';
 import { ChatMessage } from './components/contracts';
 import ChatBox from './components/ChatBox/ChatBox';
 
