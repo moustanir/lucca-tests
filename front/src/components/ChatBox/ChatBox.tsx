@@ -5,8 +5,8 @@ import { ChatField } from '../ChatField';
 
 export const ChatBox : React.FC<ChatBoxProps> = ({ label, author }) => {
     return (
-      <div className="ChatBoxContainer">
-        <label>{label}</label>
+      <div data-testid="chatbox-container" className="ChatBoxContainer">
+        <label data-testid="chatbox-label">{label}</label>
         <ChatBoxContent author={author} />
         <ChatField author={author} />
       </div>

@@ -1,8 +1,16 @@
 import React from 'react';
 import { ChatBoxMessageProps } from '../contracts';
 
-export const ChatBoxMessage : React.FC<ChatBoxMessageProps> = ({message, id, reader}) =>{
-    return (<p key={id} >{message.author === reader ? "Me" : message.author}: {message.content}</p>)
+export const ChatBoxMessage: React.FC<ChatBoxMessageProps> = ({ message, id, reader }) => {
+    return (
+        <div key={id} data-testid="chatBoxMessage-container">
+            <div data-testid="chatBoxMessage-author">
+                {message.author === reader ? "Me" : message.author}:
+            </div>
+            <div data-testid="chatBoxMessage-content">
+                {message.content}
+            </div>
+        </div>)
 }
 
 export default ChatBoxMessage;
