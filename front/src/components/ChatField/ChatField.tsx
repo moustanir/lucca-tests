@@ -11,7 +11,7 @@ export const ChatField: React.FC<ChatFieldProps> = ({ author }) => {
             contextData?.setMessages([...contextData?.messages, { content: inputRef.current!.value, author }]);
             inputRef.current!.value = '';
         }
-    }, []);
+    }, [author, inputRef, contextData]);
 
     return (
         <form data-testid="chatfield-container" className="ChatFieldContainer" onSubmit={(event) => event.preventDefault()}>

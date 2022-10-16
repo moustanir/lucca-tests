@@ -3,7 +3,7 @@ import { ChatBoxMessageProps } from '../contracts';
 
 export const ChatBoxMessage: React.FC<ChatBoxMessageProps> = ({ message, id, reader }) => {
     return (
-        <div key={id} data-testid="chatBoxMessage-container">
+        <div key={id} data-testid="chatBoxMessage-container" className="chatBoxMessage-container">
             <div data-testid="chatBoxMessage-author">
                 {message.author === reader ? "Me" : message.author}:
             </div>
