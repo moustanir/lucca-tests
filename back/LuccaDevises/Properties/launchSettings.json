@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "LuccaDevises": {
+      "commandName": "Project",
+      "commandLineArgs": "sample-devises",
+      "workingDirectory": "C:\\Users\\SeelkMous\\Documents\\codeSample"
+    }
+  }
+}
